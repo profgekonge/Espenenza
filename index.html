@@ -4,13 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Espenenza - Professional Software Development Solutions">
-    <title>Espenenza | Software Development Company</title>
+
+    <!-- Primary Meta Tags -->
+    <title>Espenenza | Professional Software Development Company | Custom Web & Mobile Apps</title>
+    <meta name="title" content="Espenenza | Professional Software Development Company | Custom Web & Mobile Apps">
+    <meta name="description"
+        content="Espenenza delivers cutting-edge software development solutions. Expert web development, mobile apps, and cloud solutions to transform your business. Contact us for a free consultation.">
+    <meta name="keywords"
+        content="software development, web development, mobile app development, cloud solutions, custom software, Espenenza, software company, enterprise software, digital transformation">
+    <meta name="author" content="Espenenza">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://espenenza.com/">
+    <meta property="og:title" content="Espenenza | Professional Software Development Company">
+    <meta property="og:description"
+        content="Transform your business with innovative software solutions. Web development, mobile apps, and cloud solutions tailored to your needs.">
+    <meta property="og:image" content="https://espenenza.com/og-image.jpg">
+    <meta property="og:site_name" content="Espenenza">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://espenenza.com/">
+    <meta property="twitter:title" content="Espenenza | Professional Software Development Company">
+    <meta property="twitter:description"
+        content="Transform your business with innovative software solutions. Web development, mobile apps, and cloud solutions tailored to your needs.">
+    <meta property="twitter:image" content="https://espenenza.com/twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://espenenza.com/">
+
+    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Espenenza",
+      "description": "Professional software development company specializing in web development, mobile apps, and cloud solutions",
+      "url": "https://espenenza.com",
+      "logo": "https://espenenza.com/logo.png",
+      "foundingDate": "2020",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "email": "info@espenenza.com"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/espenenza",
+        "https://twitter.com/espenenza",
+        "https://github.com/espenenza"
+      ],
+      "areaServed": "Worldwide",
+      "service": [
+        {
+          "@type": "Service",
+          "name": "Web Development",
+          "description": "Modern, responsive websites and web applications built with cutting-edge technologies"
+        },
+        {
+          "@type": "Service",
+          "name": "Mobile App Development",
+          "description": "Native and cross-platform mobile applications for iOS and Android"
+        },
+        {
+          "@type": "Service",
+          "name": "Cloud Solutions",
+          "description": "Scalable cloud infrastructure and enterprise software solutions"
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
@@ -154,25 +231,31 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">Ready to start your project? Let's build something amazing together.</p>
-            <form class="contact-form" id="contactForm">
+            <p class="contact-subtitle">Ready to start your project? Let's build something amazing together. Contact
+                Espenenza for a free consultation.</p>
+            <form class="contact-form" id="contactForm" role="form" aria-label="Contact form">
                 <div class="form-row">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required autocomplete="name"
+                        aria-required="true">
+                    <input type="email" name="email" id="email" placeholder="Your Email" required autocomplete="email"
+                        aria-required="true">
                 </div>
-                <input type="text" name="subject" placeholder="Subject" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <input type="text" name="subject" id="subject" placeholder="Subject" required autocomplete="off"
+                    aria-required="true">
+                <textarea name="message" id="message" rows="5" placeholder="Your Message" required
+                    aria-required="true"></textarea>
+                <button type="submit" class="btn btn-primary" aria-label="Send message to Espenenza">Send
+                    Message</button>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">Espenenza</div>
-                <p>&copy; 2026 Espenenza. All rights reserved.</p>
+                <p>&copy; 2026 Espenenza Software Development Company. All rights reserved.</p>
             </div>
         </div>
     </footer>

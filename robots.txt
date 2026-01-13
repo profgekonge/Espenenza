@@ -1,0 +1,13 @@
+# Robots.txt for Espenenza
+# https://espenenza.com/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://espenenza.com/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
